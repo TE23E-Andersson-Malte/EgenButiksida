@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body{
+    display: grid;
+    grid-template-columns: 15vw, 65vw, 20vw;
+    grid-template-rows: 10vh, 80vh, 10vh, 35vh, 20vh;
+    margin: 0%;
+}
+
+header{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    background-color: #5D7556;
+}
+
+#logo{
+    width: 5%;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+h1{
+    font-family: "Merienda", serif;
+    color: black;
+}
+
+nav{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 5%;
+
+    border: solid black 5px;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    margin: 1%;
+
+    border: solid black 5px;
+}
+
+main img{
+    width: 95%;
+    height: auto;
+}
+
+#varukorg{
+    grid-column: 3/4;
+    grid-row: 2/4;
+
+    border: solid black 5px;
+}
