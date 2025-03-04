@@ -6,6 +6,7 @@ body{
     grid-template-columns: 15vw, 65vw, 20vw;
     grid-template-rows: 10vh, 80vh, 10vh, 35vh, 20vh;
     margin: 0%;
+    background-color: #94A88A;
 }
 
 header{
@@ -41,19 +42,37 @@ nav{
 main{
     grid-column: 2/3;
     grid-row: 2/4;
-    margin: 1%;
+    margin-top: 1%;
+    width: 60vw;
 
     border: solid black 5px;
 }
 
 main img{
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 
 #varukorg{
     grid-column: 3/4;
     grid-row: 2/4;
+    width: 20vw;
+    margin: 3%;
+
+    border: solid black 5px;
+}
+
+footer{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-around;
+    align-content: center;
 
     border: solid black 5px;
 }
