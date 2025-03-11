@@ -73,9 +73,11 @@ nav p{
     margin: 10%;
 }
 
-main img{
-    width: 100%;
+#banner{
+    width: 94%;
     height: auto;
+    align-items: center;
+    border: solid black 5px;
 }
 
 #produkternasdiv{
@@ -87,8 +89,6 @@ main img{
 
     display: flex;
     flex-wrap: wrap;
-
-    border: solid black 5px;
 }
 
 article{
@@ -102,6 +102,11 @@ article{
 
 article img{
     width: 100%;
+    margin: 0px;
+}
+
+.ÄrAnnorlunda img{
+    margin-top: 11%;
 }
 
 .NamnPris{
@@ -110,7 +115,9 @@ article img{
     font-family: "Lilita One", serif;
     text-align: center;
 
-    margin-bottom: 0%;
+    margin: 0%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .LäggTillKnapp{
@@ -119,7 +126,10 @@ article img{
     color: white;
     font-family: "Lilita One", serif;
     text-align: center;
+
     margin-top: 0%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #varukorg{
@@ -128,7 +138,25 @@ article img{
     width: 20vw;
     margin: 3%;
 
+    background-color: #5D7556;
+
     border: solid black 5px;
+}
+
+#total{
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-bottom: 0%;
+}
+
+#tillbetalning{
+    text-align: center;
+    background-color: #71BC5E;
+    color: #FFFFFF;
+    font-family: "Lilita One", serif;
+    margin-top: 0%;
+    padding: 6%;
 }
 
 footer{
