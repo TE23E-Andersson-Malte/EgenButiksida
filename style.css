@@ -35,7 +35,6 @@ main{
     grid-template-columns: 20%, 55%, 25%;
     grid-template-rows: 50vh, 50vh;
 
-    border: solid black 5px;
 }
 
 h1{
@@ -78,6 +77,7 @@ nav p{
     height: auto;
     align-items: center;
     border: solid black 5px;
+    border-radius: 20px;
 }
 
 #produkternasdiv{
@@ -98,6 +98,7 @@ article{
     padding-left: 1%;
     padding-right: 1%;
     background-color: #B0C4DE;
+    border-radius: 20px;
 }
 
 article img{
@@ -116,6 +117,7 @@ article img{
     text-align: center;
 
     margin: 0%;
+    padding: 2%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -171,9 +173,55 @@ footer{
     justify-content: space-around;
     align-content: center;
     background-color: #9E9E9E;
+    border-top: solid black 5px;
 }
 
 footer p{
     color: white;
     font-weight: bold;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh, 120vh, 20vh;
+    }
+    nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 640px){
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh, 100vh, 20vh;
+    }
+    #logo{
+        width: 17%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    nav{
+        display: none;
+    }
+    article{
+        width: 90%;
+    }
+    #varukorg{
+        width: 92%;
+    }
+    #varukorg h2{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer p{
+        font-size: 20px;
+    }
 }
