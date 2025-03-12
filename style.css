@@ -185,10 +185,38 @@ footer p{
     body{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 15vh, 120vh, 20vh;
+        grid-template-rows: 15vh, 100vh, 20vh;
+    }
+    #logo{
+        width: 12%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    h1{
+        font-size: 40px;
     }
     nav{
         display: none;
+    }
+    article{
+        width: 40%;
+        margin: 3.25%;
+    }
+    #varukorg{
+        width: 92%;
+    }
+    #varukorg h2{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer p{
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 640px){
