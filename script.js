@@ -27,19 +27,27 @@ function VisaIVarukorg() {
         tabortknapp.src = "img/släng.webp";
         tabortknapp.alt = "Ta bort"
 
-        tabortknapp.style.width = "30px";
-        tabortknapp.style.height = "30px";
+        tabortknapp.style.width = "35px";
+        tabortknapp.style.height = "35px";
 
-        tabortknapp.onclick = function() {
+        tabortknapp.onclick = function () {
             TaBortFrånVagn(index);
         };
 
         li.appendChild(tabortknapp);
         ul.appendChild(li);
     }
+
+    //Beräkna totalkostnaden
+    let total = 0;
+    for (let i = 0; i < varukorg.length; i++) {
+        total += (varukorg[i].Pris);
+    }
+    //Uppdatera texten som beskriver totalkostnaden
+    document.getElementById("total").textContent = "TOTAL: " + total + " SEK";
 }
 
-function TaBortFrånVagn(index){
+function TaBortFrånVagn(index) {
     varukorg.splice(index, 1);
     localStorage.setItem("varukorg", JSON.stringify(varukorg));
     VisaIVarukorg(); //Uppdatera varukorgen
