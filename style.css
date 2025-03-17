@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
-body{
+body {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 98.7vw; 
     grid-template-rows: 15vh, 120vh, 20vh;
     margin: 0%;
     background-color: #94A88A;
 }
 
-header{
+header {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -17,7 +17,7 @@ header{
     background-color: #5D7556;
 }
 
-#logo{
+#logo {
     width: 5%;
     height: auto;
     border-radius: 50%;
@@ -26,30 +26,30 @@ header{
     margin-right: 15px;
 }
 
-main{
+main {
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 1%;
 
     display: grid;
-    grid-template-columns: 20%, 55%, 25%;
+    grid-template-columns: 20vw, 55vw, 25vw;
     grid-template-rows: 50vh, 50vh;
 
 }
 
-h1{
-    font-family: "Merienda", serif;
+h1 {
+    font-family: "Merienda", Georgia, serif;
     color: black;
 }
 
-h2{
-    font-family: "Lilita One", serif;
+h2 {
+    font-family: "Lilita One", Garamond, serif;
     margin: 3%;
     margin-top: 10%;
     text-align: center;
 }
 
-nav{
+nav {
     grid-column: 1/2;
     grid-row: 1/2;
 
@@ -64,17 +64,17 @@ nav{
     border-radius: 20px;
 }
 
-nav h2{
+nav h2 {
     font-size: 14px;
     margin: 10%;
 }
 
-nav p{
-    font-family: "Lilita One", serif;
+nav p {
+    font-family: "Lilita One", Garamond, serif;
     margin: 10%;
 }
 
-#banner{
+#banner {
     width: 94%;
     height: auto;
     align-items: center;
@@ -82,7 +82,7 @@ nav p{
     border-radius: 20px;
 }
 
-#produkternasdiv{
+#produkternasdiv {
     grid-column: 2/3;
     grid-row: 1/3;
     margin: 1%;
@@ -93,45 +93,46 @@ nav p{
     flex-wrap: wrap;
 }
 
-article{
+article {
     border: solid black 2px;
     width: 27%;
-    margin:1%;
+    margin: 1%;
     padding-left: 1%;
     padding-right: 1%;
     background-color: #B0C4DE;
     border-radius: 20px;
 }
 
-article img{
+article img {
     width: 100%;
     margin: 0%;
 }
 
-.ÄrAnnorlunda img{
+.ÄrAnnorlunda img {
     margin-top: 11%;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0px;
     margin: 3%;
 }
 
-li{
-    font-family: "Lilita One", serif;
+li {
+    font-family: "Lilita One", Garamond, serif;
     background-color: white;
     border: solid 3px black;
     display: flex;
     flex-direction: row;
     padding: 5%;
     margin: 5%;
+    align-items: center;
 }
 
-.NamnPris{
+.NamnPris {
     color: black;
     background-color: white;
-    font-family: "Lilita One", serif;
+    font-family: "Lilita One", Garamond, serif;
     text-align: center;
 
     margin: 0%;
@@ -140,11 +141,11 @@ li{
     border-top-right-radius: 10px;
 }
 
-.LäggTillKnapp{
-    background-color:  #71BC5E;
+.LäggTillKnapp {
+    background-color: #71BC5E;
     padding: 6%;
     color: white;
-    font-family: "Lilita One", serif;
+    font-family: "Lilita One", Garamond, serif;
     text-align: center;
 
     margin-top: 0%;
@@ -157,11 +158,11 @@ li{
     margin-bottom: 6%;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.05);
 }
 
-#varukorg{
+#varukorg {
     grid-column: 3/4;
     grid-row: 1/3;
     width: 20vw;
@@ -172,24 +173,31 @@ button:hover{
     border: solid black 2px;
 }
 
-#total{
+.tabort_knapp{
+    width: 20%;
+    height: 20%;
+}
+
+#total {
     text-align: center;
     color: black;
     background-color: white;
     margin-bottom: 0%;
 }
 
-#tillbetalning{
+#tillbetalning {
     text-align: center;
     background-color: #71BC5E;
     color: #FFFFFF;
-    font-family: "Lilita One", serif;
+    font-family: "Lilita One", Garamond, serif;
     margin-top: 0%;
     padding: 6%;
+    width: 100%;
     margin-bottom: 0%;
+    border: none;
 }
 
-footer{
+footer {
     grid-column: 1/2;
     grid-row: 3/4;
     display: flex;
@@ -204,81 +212,143 @@ footer{
     border-top: solid black 3px;
 }
 
-footer p{
+footer a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label{
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    body{
+    body {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 100vw;
         grid-template-rows: 15vh, 100vh, 20vh;
     }
-    #logo{
+
+    #logo {
         width: 12%;
     }
-    main{
+
+    main {
         display: flex;
         flex-direction: column;
         border: none;
     }
-    h1{
+
+    h1 {
         font-size: 40px;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    article{
+
+    article {
         width: 40%;
         margin: 3.25%;
     }
-    #varukorg{
+
+    #varukorg {
         width: 92%;
     }
-    #varukorg h2{
+
+    li{
+        justify-content: space-around;
+        padding: 0%;
+        font-size: 22px;
+    }
+
+    .tabort_knapp{
+        width: 10%;
+        height: 10%;
+        margin: 0%;
+    }
+
+    #varukorg h2 {
         display: none;
     }
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    footer p{
+
+    #total{
         font-size: 24px;
     }
+
+    #tillbetalning{
+        font-size: 22px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer a {
+        font-size: 20px;
+        margin: 2%;
+    }
+
+    footer label{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 2%;
+    }
 }
-@media screen and (max-width: 640px){
-    body{
+
+@media screen and (max-width: 640px) {
+    body {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 100vw;
         grid-template-rows: 15vh, 100vh, 20vh;
     }
-    #logo{
+
+    #logo {
         width: 17%;
     }
-    main{
+
+    main {
         display: flex;
         flex-direction: column;
         border: none;
     }
-    nav{
+
+    nav {
         display: none;
     }
-    article{
+
+    article {
         width: 90%;
     }
-    #varukorg{
+
+    #varukorg {
         width: 92%;
     }
-    #varukorg h2{
+
+    #varukorg h2 {
         display: none;
     }
-    footer{
-        display: flex;
-        flex-wrap: wrap;
+
+    li{
+        justify-content: space-evenly;
     }
-    footer p{
-        font-size: 20px;
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    footer label{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 3%;
+    }
+
+    footer a {
+        font-size: 18px;
+        margin: 5%;
     }
 }

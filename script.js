@@ -3,6 +3,7 @@ let varukorg = JSON.parse(localStorage.getItem("varukorg")) || [];
 
 //Funktion för att lägga till i varukorgen och spara i local storage
 function LäggTill(namn, pris) {
+    //Ett objekt för produkterna
     let produkt = { Namn: namn, Pris: pris };
     varukorg.push(produkt);
 
@@ -15,11 +16,14 @@ function VisaIVarukorg() {
     //Hitta varukorgens ul-element
     let ul = document.querySelector("ul");
 
+    //Rensa för att undvika dubbletter
     ul.innerHTML = "";
 
+    //Loop som repeteras lika många gånger som antal produkter i varukorgen
     for (let index = 0; index < varukorg.length; index++) {
         let vara = varukorg[index];
         let li = document.createElement("li");
+        //Skriv ut produkten/varan
         li.textContent = vara.Namn + " | " + vara.Pris + " SEK "
 
         //Skapa en ta bort knapp
@@ -27,9 +31,9 @@ function VisaIVarukorg() {
         tabortknapp.src = "img/släng.webp";
         tabortknapp.alt = "Ta bort"
 
-        tabortknapp.style.width = "35px";
-        tabortknapp.style.height = "35px";
+        tabortknapp.classList.add("tabort_knapp");
 
+        //När knappen trycks ska "ta bort"-funktionen köras
         tabortknapp.onclick = function () {
             TaBortFrånVagn(index);
         };
@@ -47,8 +51,11 @@ function VisaIVarukorg() {
     document.getElementById("total").textContent = "TOTAL: " + total + " SEK";
 }
 
+//Funktion för att ta bort varor
 function TaBortFrånVagn(index) {
+    //Tar bort produkten från varukorgen
     varukorg.splice(index, 1);
-    localStorage.setItem("varukorg", JSON.stringify(varukorg));
+    //Sparar den uppdaterade varukorgen i local storage
+    localStorage.setItem("varukorg", JSON.stringify(varukorg)); 
     VisaIVarukorg(); //Uppdatera varukorgen
 }
