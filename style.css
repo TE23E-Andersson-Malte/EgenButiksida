@@ -59,7 +59,9 @@ nav{
     text-align: center;
     background-color: #D9D9D9;
 
-    border: solid black 5px;
+    border: solid black 3px;
+
+    border-radius: 20px;
 }
 
 nav h2{
@@ -76,7 +78,7 @@ nav p{
     width: 94%;
     height: auto;
     align-items: center;
-    border: solid black 5px;
+    border: solid black 2px;
     border-radius: 20px;
 }
 
@@ -92,7 +94,7 @@ nav p{
 }
 
 article{
-    border: solid black 5px;
+    border: solid black 2px;
     width: 27%;
     margin:1%;
     padding-left: 1%;
@@ -103,7 +105,7 @@ article{
 
 article img{
     width: 100%;
-    margin: 0px;
+    margin: 0%;
 }
 
 .ÄrAnnorlunda img{
@@ -132,6 +134,15 @@ article img{
     margin-top: 0%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+
+    width: 100%;
+    border: none;
+
+    margin-bottom: 6%;
+}
+
+button:hover{
+    transform: scale(1.05);
 }
 
 #varukorg{
@@ -142,7 +153,7 @@ article img{
 
     background-color: #5D7556;
 
-    border: solid black 5px;
+    border: solid black 2px;
 }
 
 #total{
@@ -173,7 +184,7 @@ footer{
     justify-content: space-around;
     align-content: center;
     background-color: #9E9E9E;
-    border-top: solid black 5px;
+    border-top: solid black 3px;
 }
 
 footer p{
