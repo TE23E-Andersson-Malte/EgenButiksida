@@ -112,6 +112,22 @@ article img{
     margin-top: 11%;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 3%;
+}
+
+li{
+    font-family: "Lilita One", serif;
+    background-color: white;
+    border: solid 3px black;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    margin: 5%;
+}
+
 .NamnPris{
     color: black;
     background-color: white;
@@ -170,6 +186,7 @@ button:hover{
     font-family: "Lilita One", serif;
     margin-top: 0%;
     padding: 6%;
+    margin-bottom: 0%;
 }
 
 footer{

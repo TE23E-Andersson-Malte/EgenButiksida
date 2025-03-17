@@ -23,8 +23,13 @@ function VisaIVarukorg() {
         li.textContent = vara.Namn + " | " + vara.Pris + " SEK "
 
         //Skapa en ta bort knapp
-        let tabortknapp = document.createElement("button");
-        tabortknapp.textContent = "Ta bort"
+        let tabortknapp = document.createElement("img");
+        tabortknapp.src = "img/släng.webp";
+        tabortknapp.alt = "Ta bort"
+
+        tabortknapp.style.width = "30px";
+        tabortknapp.style.height = "30px";
+
         tabortknapp.onclick = function() {
             TaBortFrånVagn(index);
         };
