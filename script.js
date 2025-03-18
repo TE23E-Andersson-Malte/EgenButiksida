@@ -3,10 +3,11 @@ let varukorg = JSON.parse(localStorage.getItem("varukorg")) || [];
 
 //Funktion för att lägga till i varukorgen och spara i local storage
 function LäggTill(namn, pris) {
-    //Ett objekt för produkterna
+    //javascriptobjekt för produkterna
     let produkt = { Namn: namn, Pris: pris };
     varukorg.push(produkt);
 
+    //Spara i local storage
     localStorage.setItem("varukorg", JSON.stringify(varukorg));
     VisaIVarukorg();
 }
@@ -26,11 +27,13 @@ function VisaIVarukorg() {
         //Skriv ut produkten/varan
         li.textContent = vara.Namn + " | " + vara.Pris + " SEK "
 
-        //Skapa en ta bort knapp
+        //Skapa en ta bort knapp (som är en bild på en soptunna)
         let tabortknapp = document.createElement("img");
         tabortknapp.src = "img/släng.webp";
+        //om bilden inte fungerar står det "ta bort" istället
         tabortknapp.alt = "Ta bort"
 
+        //en class för knappen för att kunna lägga på css
         tabortknapp.classList.add("tabort_knapp");
 
         //När knappen trycks ska "ta bort"-funktionen köras
