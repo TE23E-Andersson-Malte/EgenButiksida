@@ -3,7 +3,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 98.7vw; 
+    grid-template-columns: 98.7vw;
     grid-template-rows: 15vh, 120vh, 20vh;
     margin: 0%;
     background-color: #94A88A;
@@ -34,6 +34,7 @@ main {
 h1 {
     font-family: "Merienda", Georgia, serif;
     color: black;
+    font-size: 2rem;
 }
 h2 {
     font-family: "Lilita One", Garamond, serif;
@@ -93,7 +94,7 @@ article img {
 ul {
     list-style-type: none;
     padding: 0px;
-    margin: 3%; 
+    margin: 3%;
 }
 li {
     font-family: "Lilita One", Garamond, serif;
@@ -140,13 +141,13 @@ button:hover {
     background-color: #D9D9D9;
     border: solid black 2px;
 }
-#varukorg h2{
+#varukorg h2 {
     background-color: #5D7556;
     margin: 0%;
     padding-top: 10%;
     padding-bottom: 10%;
 }
-.tabort_knapp{
+.tabort_knapp {
     width: 20%;
     height: 20%;
     cursor: pointer;
@@ -188,11 +189,12 @@ footer a {
     font-weight: bold;
     font-size: 20px;
 }
-label{
+label {
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
+
 @media screen and (min-width: 641px) and (max-width: 1007px) {
     body {
         display: grid;
@@ -208,7 +210,8 @@ label{
         border: none;
     }
     h1 {
-        font-size: 40px;
+        padding-top: 2%;
+        font-size: 1.8rem;
     }
     nav {
         display: none;
@@ -220,12 +223,12 @@ label{
     #varukorg {
         width: 92%;
     }
-    li{
+    li {
         justify-content: space-around;
         padding: 0%;
         font-size: 22px;
     }
-    .tabort_knapp{
+    .tabort_knapp {
         width: 10%;
         height: 10%;
         margin: 0%;
@@ -234,10 +237,10 @@ label{
         padding-top: 5%;
         padding-bottom: 5%;
     }
-    #total{
-        font-size: 24px;
+    #total {
+        padding: 1%;
     }
-    #tillbetalning{
+    #tillbetalning {
         font-size: 22px;
     }
     footer {
@@ -248,18 +251,23 @@ label{
         font-size: 18px;
         margin: 2%;
     }
-    footer label{
+    footer label {
         font-size: 18px;
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: 2%;
     }
 }
+
 @media screen and (max-width: 640px) {
     body {
         display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: 15vh, 100vh, 20vh;
+    }
+    h1 {
+        font-size: 1.6rem;
+        padding-top: 2%;
     }
     #logo {
         width: 17%;
@@ -278,18 +286,18 @@ label{
     #varukorg {
         width: 92%;
     }
-    #varukorg > h2 {
+    #varukorg>h2 {
         padding-top: 5%;
         padding-bottom: 5%;
     }
-    li{
+    li {
         justify-content: space-evenly;
     }
     footer {
         display: flex;
         flex-direction: column;
-    }   
-    footer label{
+    }
+    footer label {
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: 3%;
